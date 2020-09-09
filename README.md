@@ -21,7 +21,7 @@ npm install
 ## Install dependencies for client.
 
 ```bash
-npm client-install
+npm run client-install
 ```
 
 # Run client and/or server
