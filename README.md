@@ -52,7 +52,7 @@ Client runs on https://localhost:3000
 ## Author
 
 Sarthak Garg
-[Linked In](www.linkedin.com/in/sarthak-garg-9619331a5)
+[Linked In](http://www.linkedin.com/in/sarthak-garg-9619331a5)
 
 ## Version
 
