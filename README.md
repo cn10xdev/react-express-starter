@@ -2,7 +2,7 @@
 
 ### A basic Boilerplate for React (Front-end) and Server (Back-end) rendering
 
-![React & Express](https://miro.medium.com/max/701/1*EKW3XazCN98jcVrlEP3H8g.png)
+![React & Express](/images/react&express.png)
 
 # Quick installation
 
