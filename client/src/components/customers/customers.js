@@ -30,8 +30,9 @@ class Customers extends React.Component {
           {this.state.customers.length === 0 && (
             <p>No customers available</p>
           )}
-          {this.state.customers.map((customer, index) => (
-            <li key={index}>{customer.name}</li>
+          {this.state.customers.map((customer) => (
+            <li key={customer.id}>{customer.name}</li>
+            
           ))}
         </ul>
       </div>
