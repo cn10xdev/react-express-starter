@@ -5,7 +5,8 @@ class Customers extends React.Component {
   constructor() {
     super();
     this.state = {
-      customers: [], 
+      customers: [],
+      error: null,
       loading: true,
     };
   }
@@ -18,7 +19,7 @@ class Customers extends React.Component {
       )
       .catch((error) => {
         console.error("Error fetching customers", error);
-        this.setState({ customers: [] });
+        this.setState({ customers: [], error:"Failed to fetch customers. Please try again later."});
       });
   }
 
@@ -27,7 +28,10 @@ class Customers extends React.Component {
       <div>
         <h1>F.R.I.E.N.D.S</h1>
         <ul>
-          {this.state.customers.length === 0 && (
+        {this.state.error && (
+          <p>{this.state.error}</p>
+        )}  
+          {this.state.customers.length === 0 && !this.state.error &&(
             <p>No customers available</p>
           )}
           {this.state.customers.map((customer) => (
